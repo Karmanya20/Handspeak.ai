@@ -10,7 +10,7 @@
     <div class="nav">
     <header>
         <nav class="Navbar navbar-expand-lg">
-            <img src="logo.png" width="130px">
+            <img src="logo.png" width="100px">
         </nav>
     </header>
 </div>
@@ -18,8 +18,219 @@
         <div class="display">
     <video id="video" style="width: 100%;" autoplay></video>
 </div>
-    <div class="box"><h1>Translated Text</h1></div>
-    
+    <div class="box"><h1>Translated Text</h1>
+        <p>A scrollbar is a graphical user interface used to represent a document or webpage that is larger than the visible area. By default, web browsers provide a scrollbar with a predefined style, but with HTML and CSS, you can create a custom scrollbar that matches your website’s design and layout.
+
+            The scrollbar element has various pseudo-elements such as ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb, and ::-webkit-scrollbar-button that can be used to apply different styles. You can customize the scrollbar’s width, color, background, border, and other properties to match your website’s design. 
+            
+            It is important to note that custom scrollbars are not supported in all browsers, and the level of customization you can achieve may vary depending on the browser. 
+            
+             
+            
+            Approach: To create a custom scrollbar using HTML and CSS, you can follow these general steps:
+            
+            Create a container element that will hold the content and the scrollbar. This can be a div or any other HTML element.
+            Set the height of the container element to a fixed value, and add overflow-y: scroll to enable the scrollbar. This will allow the content to be scrolled vertically.
+            Use CSS to style the scrollbar elements, such as ::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb, and ::-webkit-scrollbar-button for WebKit-based browsers, and ::-moz-scrollbar, ::-moz-scrollbar-track, ::-moz-scrollbar-thumb, and ::-moz-scrollbar-button for Firefox.
+            Customize the scrollbar’s width, color, background, border, and other properties using CSS.
+            Add any additional styling, such as hover and active states for the scrollbar elements, to enhance the user experience.
+            Finally, test the custom scrollbar in different web browsers to ensure that it works as intended and that it is visually appealing.
+            Note: Not all browsers support custom scrollbars using CSS, so it’s important to provide fallback styles for browsers that do not support them.  You can do this by using conditional CSS statements or JavaScript to detect the user’s browser and apply different styles accordingly.
+            
+            Example: This example shows the use of the above-explained approach.
+            
+            
+            <!DOCTYPE html> 
+            <html lang="en"> 
+              
+            <head> 
+                <meta charset="UTF-8" /> 
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+                <meta name="viewport" content= 
+                    "width=device-width, initial-scale=1.0" /> 
+                <title> 
+                    How to create a custom scrollbar 
+                    using HTML and CSS? 
+                </title> 
+              
+                <style> 
+                    .scroll-container { 
+                        height: 300px; 
+                        overflow-y: scroll; 
+                    } 
+              
+                    .scroll-container::-webkit-scrollbar { 
+                        width: 12px; 
+                    } 
+              
+                    .scroll-container::-webkit-scrollbar-track { 
+                        background: #f1f1f1; 
+                    } 
+              
+                    .scroll-container::-webkit-scrollbar-thumb { 
+                        background: #888; 
+                    } 
+              
+                    .scroll-container::-webkit-scrollbar-thumb:hover { 
+                        background: #555; 
+                    } 
+              
+                    .scroll-container::-webkit-scrollbar-button { 
+                        display: none; 
+                    } 
+                </style> 
+            </head> 
+              
+            <body> 
+                <div class="scroll-container"> 
+                    <!-- Content goes here -->
+                    <strong>What is Data Structure?</strong> 
+                    <p> 
+                        A data structure is defined as a particular 
+                        way of storing and organizing data in our 
+                        devices to use the data efficiently and 
+                        effectively. The main idea behind using 
+                        data structures is to minimize the time 
+                        and space complexities. An efficient data 
+                        structure takes minimum memory space and 
+                        requires minimum time to execute the data. 
+                    </p> 
+              
+                    <strong>What is Algorithm?</strong> 
+                    <p> 
+                        Algorithm is defined as a process or set 
+                        of well-defined instructions that are 
+                        typically used to solve a particular group 
+                        of problems or perform a specific type of 
+                        calculation. To explain in simpler terms, 
+                        it is a set of operations performed in a 
+                        step-by-step manner to execute a task. 
+                    </p> 
+              
+                    <strong>How to start learning DSA?</strong> 
+                    <p> 
+                        The first and foremost thing is dividing 
+                        the total procedure into little pieces 
+                        which need to be done sequentially. The 
+                        complete process to learn DSA from 
+                        scratch can be broken into 4 parts: 
+                    </p> 
+              
+                    <li>Learn about Time and Space complexities</li> 
+                    <li> 
+                        Learn the basics of individual 
+                        Data Structures 
+                    </li> 
+                    <li>Learn the basics of Algorithms</li> 
+                    <li>Practice Problems on DSA</li> 
+              
+                    <strong> 1. Learn about Complexities</strong> 
+                    <p> 
+                        Here comes one of the interesting and 
+                        important topics. The primary motive to 
+                        use DSA is to solve a problem effectively 
+                        and efficiently. How can you decide if a 
+                        program written by you is efficient or 
+                        not? This is measured by complexities. 
+                        Complexity is of two types: 
+                    </p> 
+              
+                    <li> 
+                        <strong>Time Complexity:</strong> Time 
+                        complexity is used to measure the amount 
+                        of time required to execute the code. 
+                    </li> 
+                    <li> 
+                        <strong>Space Complexity:</strong> 
+                        Space complexity means the amount of 
+                        space required to execute successfully 
+                        the functionalities of the code. You 
+                        will also come across the term Auxiliary 
+                        Space very commonly in DSA, which refers 
+                        to the extra space used in the program 
+                        other than the input data structure. 
+                    </li> 
+                    <p> 
+                        Both of the above complexities are 
+                        measured with respect to the input 
+                        parameters. But here arises a problem. 
+                        The time required for executing a code 
+                        depends on several factors, such as: 
+                    </p> 
+                    <li> 
+                        The number of operations performed 
+                        in the program 
+                    </li> 
+                    <li>The speed of the device, and also</li> 
+                    <li> 
+                        The speed of data transfer if being 
+                        executed on an online platform. 
+                    </li> 
+                </div> 
+            </body> 
+              
+            </html> 
+            Output:
+            
+            GFG | How to create a custom scrollbar using CSS
+            GFG | How to create a custom scrollbar using CSS
+            
+            Supported Browser: Custom scrollbars are supported in several popular web browsers, but their level of support may vary depending on the browser.
+            
+            Google Chrome
+            Safari
+            Opera
+            Mozilla Firefox
+            Conclusion: Customizing scrollbars with HTML and CSS is a great way to add a personalized touch to your website’s design. By using the various pseudo-elements available for the scrollbar, you can change the appearance of the scrollbar to match your website’s color scheme and layout.
+            
+            
+            “This course was packed with amazing and well-organized content! The project-based approach of this course made it even better to understand concepts faster. Also the instructor in the live classes is really good and knowledgeable.”- Tejas | Deutsche Bank
+            
+            With our revamped Full Stack Development Program: master Node.js and React that enables you to create dynamic web applications.
+            
+            So get ready for salary hike only with our Full Stack Development Course.
+            
+            
+            Last Updated : 17 Mar, 2023
+            
+            2
+            
+            Previous
+            How to get rid of the gap under the image ?
+            Next
+            How to search a vertical tab character with JavaScript RegExp ?
+            Share your thoughts in the comments
+            
+            Add Your Comment
+            Similar Reads
+            How to style scrollbar thumb for the webkit browsers and what are components of scrollbar ?
+            How to create an image gallery with a horizontal scrollbar using CSS ?
+            How to Change the Position of Scrollbar using CSS ?
+            How to Change Style of Scrollbar using Tailwind CSS ?
+            How to create scrollable element in Tailwind without a scrollbar ?
+            CSS scrollbar-width Property
+            CSS | ::-webkit-scrollbar
+            CSS overflow-x: visible and overflow-y: hidden causing scrollbar issue
+            CSS scrollbar-color Property
+            How to add custom styles and ways to add custom styles in Tailwind-CSS ?
+            author
+            bhartik021
+            Article Tags :
+            CSS-Questions 
+            CSS 
+            Web Technologies
+            Trending in News
+            View More
+            10 Best Tools to Convert DOC to DOCX
+            How To Summarize PDF Documents Using Google Bard for Free
+            Best free Android apps for Meditation and Mindfulness
+            TikTok Is Paying Creators To Up Its Search Game
+            30 OOPs Interview Questions and Answers (2024)
+            course-img
+            225k+ interested Geeks
+            Full Stack Development with React & Node JS - Live
+            </p>
+    </div>
 </div>
 <canvas id="canvas" width="0px" height="0px"></canvas>
 <script src="cam.js"></script>
